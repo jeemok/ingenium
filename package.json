@@ -1,5 +1,5 @@
 {
-  "name": "@HashemKhalifa/webpack-react-boilerplate",
+  "name": "@jeemok/webpack-react-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate for react and webpack4 using, CSS-Modules, react hot loader, webpack-serve",
   "main": "index.js",
@@ -33,8 +33,8 @@
       "jsx"
     ]
   },
-  "repository": "https://github.com/HashemKhalifa/webpack-react-boilerplate",
-  "author": "HashemKhalifa",
+  "repository": "https://github.com/jeemok/webpack-react-boilerplate",
+  "author": "Jee Mok",
   "license": "ISC",
   "private": false,
   "engines": {
