@@ -1,7 +1,7 @@
 {
-  "name": "@jeemok/webpack-react-boilerplate",
+  "name": "@jeemok/avg88",
   "version": "1.0.0",
-  "description": "Boilerplate for react and webpack4 using, CSS-Modules, react hot loader, webpack-serve",
+  "description": "Casino product page",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-serve --open",
@@ -11,7 +11,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,css,md}": [
+    "*.{js,jsx,css}": [
       "prettier --write --single-quote",
       "eslint --fix",
       "git add"
@@ -33,7 +33,7 @@
       "jsx"
     ]
   },
-  "repository": "https://github.com/jeemok/webpack-react-boilerplate",
+  "repository": "https://github.com/jeemok/avg88",
   "author": "Jee Mok",
   "license": "ISC",
   "private": false,
@@ -46,7 +46,8 @@
     "prop-types": "15.6.2",
     "react": "16.4.2",
     "react-dom": "16.4.2",
-    "react-hot-loader": "4.3.4"
+    "react-hot-loader": "4.3.4",
+    "semantic-ui-react": "^0.82.3"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"
