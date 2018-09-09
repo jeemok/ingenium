@@ -1,0 +1,17 @@
+footer {
+  background-color: #383838;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+footer h2 {
+  font-family: sans-serif;
+  color: grey;
+  font-size: 15px;
+  padding: 20px;
+}
