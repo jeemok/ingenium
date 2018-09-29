@@ -1,7 +1,7 @@
 {
-  "name": "@jeemok/avg88",
+  "name": "@jeemok/boilerplate",
   "version": "1.0.0",
-  "description": "Casino product page",
+  "description": "Boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-serve --open",
@@ -33,7 +33,7 @@
       "jsx"
     ]
   },
-  "repository": "https://github.com/jeemok/avg88",
+  "repository": "https://github.com/jeemok/boilerplate",
   "author": "Jee Mok",
   "license": "ISC",
   "private": false,
