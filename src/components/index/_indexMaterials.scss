@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.index-materials {
+  padding: 5.71429rem 0; }
+  @media (max-width: 799px) {
+    .index-materials {
+      padding: 4.28571rem 0; } }
+  .index-materials .materials-list {
+    display: flex;
+    align-items: center; }
+    .index-materials .materials-list .materials-text {
+      text-align: center;
+      margin: 0 4.28571rem;
+      flex: 1 1 100%; }
+      .index-materials .materials-list .materials-text h2 {
+        font-family: "Muli", sans-serif;
+        font-weight: 600;
+        font-size: 2.28571rem;
+        line-height: 120%;
+        margin: 0 auto 2.14286rem; }
+      .index-materials .materials-list .materials-text p {
+        font-size: 1rem;
+        line-height: 160%;
+        margin: 0; }
+      .index-materials .materials-list .materials-text .cta {
+        padding: 0.85714rem 1.78571rem;
+        color: #28A5BE;
+        border: 0.14286rem solid #28A5BE;
+        display: inline-block;
+        text-decoration: none;
+        margin: 2.85714rem auto 0;
+        transition: all 0.3s ease-in-out;
+        font-size: 1.14286rem; }
+        .index-materials .materials-list .materials-text .cta:hover {
+          background-color: #28A5BE;
+          color: #fff; }
+    .index-materials .materials-list .material-preview {
+      position: relative;
+      flex: 0 0 16.14286rem;
+      display: flex;
+      align-items: center;
+      width: 16.14286rem;
+      height: 32.85714rem;
+      overflow: hidden; }
+      @media (max-width: 799px) {
+        .index-materials .materials-list .material-preview {
+          display: none; } }
+      .index-materials .materials-list .material-preview img {
+        width: 29.42857rem;
+        flex-shrink: 0;
+        flex-grow: 0;
+        height: auto;
+        transition: 1.8s all cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition-delay: 0.2s; }
+      .index-materials .materials-list .material-preview.preview-left .shadow {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -0.5rem;
+        border-radius: 100%;
+        z-index: 2;
+        height: 32.85714rem;
+        width: 0.71429rem;
+        background-color: #43525A;
+        filter: blur(10px); }
+      .index-materials .materials-list .material-preview.preview-left img {
+        transform: translateX(-21.85714rem); }
+      .index-materials .materials-list .material-preview.preview-left.in-view img {
+        transform: translateX(-14.71429rem); }
+      .index-materials .materials-list .material-preview.preview-right .shadow {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -0.5rem;
+        border-radius: 100%;
+        z-index: 2;
+        height: 32.85714rem;
+        width: 0.71429rem;
+        background-color: #43525A;
+        filter: blur(10px); }
+      .index-materials .materials-list .material-preview.preview-right img {
+        transform: translateX(8.57143rem); }
+      .index-materials .materials-list .material-preview.preview-right.in-view img {
+        transform: translateX(1.42857rem); }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_indexMaterials.scss

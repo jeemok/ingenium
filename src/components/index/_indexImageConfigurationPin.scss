@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.index-image-configuration {
+  position: relative; }
+
+.pin-container {
+  position: absolute; }
+  @media (max-width: 799px) {
+    .pin-container {
+      display: none; } }
+  .pin-container.pin-active {
+    z-index: 2; }
+  .pin-container .pin-button {
+    position: relative;
+    z-index: 2;
+    width: 4.57143rem;
+    height: 4.57143rem;
+    background-color: #fff;
+    color: #43525A;
+    border: 1px solid #ddd;
+    outline: none;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: rotate(0) scale(1); }
+    .pin-container .pin-button:hover {
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+      transform: rotate(20deg);
+      cursor: pointer; }
+    .pin-container .pin-button .button-icon {
+      font-size: 2.28571rem; }
+    .pin-container .pin-button.pin-active {
+      transform: rotate(45deg) scale(0.8); }
+  .pin-container .info-wrapper {
+    position: absolute;
+    bottom: 2.28571rem;
+    left: 2.28571rem;
+    transition: 0.2s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateX(-3.57143rem) translateY(3.57143rem);
+    opacity: 0; }
+    .pin-container .info-wrapper.pin-active {
+      transform: translateX(0) translateY(0);
+      opacity: 1; }
+  .pin-container .info-container {
+    width: 21.42857rem;
+    display: flex;
+    padding: 1.42857rem;
+    background-color: #fff;
+    border: 1px solid #eee; }
+    .pin-container .info-container.no-image {
+      width: auto; }
+    .pin-container .info-container .info-main {
+      flex: 0 0 10.71429rem;
+      width: 10.71429rem;
+      padding: 1.42857rem 0; }
+      .pin-container .info-container .info-main .item-name {
+        font-family: "Muli", sans-serif;
+        font-weight: 400;
+        font-size: 1.28571rem;
+        line-height: 130%;
+        margin: 0; }
+      .pin-container .info-container .info-main .separator {
+        width: 3.57143rem;
+        height: 1px;
+        background-color: #28A5BE;
+        display: block;
+        margin: 1.07143rem 0; }
+      .pin-container .info-container .info-main .item-description {
+        font-family: "Muli", sans-serif;
+        font-weight: 400;
+        font-size: 0.85714rem;
+        line-height: 160%;
+        margin: 0; }
+      .pin-container .info-container .info-main .item-price {
+        display: block;
+        font-family: "Muli", sans-serif;
+        font-weight: 700;
+        color: #28A5BE;
+        margin: 1.07143rem 0 0; }
+    .pin-container .info-container .info-graphic {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      left: 2.85714rem; }
+      .pin-container .info-container .info-graphic img {
+        display: block;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        margin: 1.42857rem auto;
+        transition: 1.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+        transform: translateY(0); }
+      .pin-container .info-container .info-graphic .graphic-shadow {
+        position: absolute;
+        z-index: 1;
+        width: 7.14286rem;
+        margin-left: -3.57143rem;
+        left: 50%;
+        bottom: 0.71429rem;
+        height: 0.35714rem;
+        background-color: #43525A;
+        border-radius: 100%;
+        filter: blur(7px);
+        transform: scale(1);
+        transition: 1.8s all cubic-bezier(0.165, 0.84, 0.44, 1);
+        display: block; }
+    .pin-container .info-container .cta {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: -1.28571rem;
+      right: -1.07143rem;
+      height: 2.57143rem;
+      padding: 0 2.14286rem;
+      font-size: 1rem;
+      color: #fff;
+      transition: 0.3s all ease-in-out;
+      text-decoration: none;
+      background-color: #28A5BE; }
+      .pin-container .info-container .cta:hover {
+        background-color: #1b6e7f; }
+    .pin-container .info-container:hover .info-graphic img {
+      transform: translateY(-0.71429rem); }
+    .pin-container .info-container:hover .info-graphic .graphic-shadow {
+      transform: scale(0.8); }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_indexImageConfigurationPin.scss

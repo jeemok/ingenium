@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.cookie-notification {
+  position: fixed;
+  z-index: 1000;
+  bottom: -28.57143rem;
+  width: 65.71429rem;
+  margin-left: -32.85714rem;
+  left: 50%;
+  transition: 1s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition-delay: 0s;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  border: #eee;
+  padding: 1.42857rem;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 1000) {
+    .cookie-notification {
+      width: 80%;
+      left: 10%;
+      margin: 0; } }
+  .cookie-notification.did-load {
+    bottom: 2.14286rem;
+    transition-delay: 3s; }
+  .cookie-notification img {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 3.42857rem;
+    margin-right: 2.14286rem; }
+  .cookie-notification p {
+    font-size: 1rem; }
+    .cookie-notification p a {
+      color: #28A5BE;
+      text-decoration: none;
+      font-family: "Muli", sans-serif;
+      font-weight: 700; }
+  .cookie-notification .dismiss-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1.07143rem 1.78571rem;
+    border: 0.14286rem solid #28A5BE;
+    color: #28A5BE;
+    background: none;
+    outline: none;
+    font-size: 1.14286rem;
+    margin-left: 3.21429rem;
+    transition: all 0.3s ease-in-out; }
+    .cookie-notification .dismiss-button:hover {
+      background-color: #28A5BE;
+      color: #fff;
+      cursor: pointer; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_cookieNotification.scss

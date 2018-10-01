@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(67, 82, 90, 0.05);
+  width: 8.57143rem;
+  height: 8.57143rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: none; }
+  .tile.tile-visible {
+    opacity: 1; }
+  .tile .add-button {
+    position: relative;
+    z-index: 2;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.71429rem;
+    background-color: #fff;
+    color: #43525A;
+    border: 1px solid #ddd;
+    outline: none;
+    box-shadow: none;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0.4;
+    flex-grow: 0;
+    flex-shrink: 0; }
+    @media (max-width: 799px) {
+      .tile .add-button {
+        width: 4.28571rem;
+        height: 4.28571rem; } }
+  .tile:hover {
+    background-color: rgba(255, 255, 255, 0.5); }
+    .tile:hover .add-button {
+      opacity: 0.5; }
+      .tile:hover .add-button:hover {
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        opacity: 1; }
+  .tile.disabled {
+    opacity: 0.4; }
+    .tile.disabled:hover {
+      background-color: rgba(255, 255, 255, 0.15); }
+      .tile.disabled:hover .add-button {
+        opacity: 0.3; }
+        .tile.disabled:hover .add-button:hover {
+          box-shadow: none;
+          cursor: default;
+          opacity: 0.3; }
+  .tile.another-updating {
+    opacity: 0; }
+  .tile.this-updating, .tile.this-updating:hover {
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5); }
+    .tile.this-updating .add-button, .tile.this-updating:hover .add-button {
+      display: none; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/configurator/_emptyTile.scss

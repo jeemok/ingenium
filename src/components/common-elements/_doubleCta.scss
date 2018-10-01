@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.double-cta {
+  display: flex;
+  align-items: center;
+  font-size: 1.14286rem; }
+  .double-cta .primary-cta {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #28A5BE;
+    color: #fff;
+    padding: 1.14286rem 1.71429rem;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transform: scale(1);
+    font-size: 1.14286rem; }
+    .double-cta .primary-cta:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.35);
+      cursor: pointer; }
+  .double-cta .secondary-cta {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 0.71429rem 1.42857rem;
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #2D2D2D;
+    color: #fff;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+    .double-cta .secondary-cta:hover {
+      padding: 0.85714rem 1.71429rem;
+      cursor: pointer; }
+  .double-cta .buy-button:after {
+    content: '';
+    font-size: 1rem;
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: -0.71429rem;
+    right: -0.71429rem;
+    background-color: #43525A;
+    color: #fff;
+    text-align: center;
+    transition-delay: 3s;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0.71429rem; }
+  .double-cta .buy-button.buy-notification-active:after {
+    content: 'Added to cart!';
+    padding: 0.57143rem 0.85714rem;
+    visibility: visible;
+    bottom: 120%;
+    opacity: 1; }
+  .double-cta .side-text {
+    flex-grow: 0;
+    font-size: 0.85714rem;
+    color: #647a86;
+    padding: 1.07143rem;
+    max-width: 10rem; }
+  .double-cta.small {
+    font-size: 1rem; }
+    .double-cta.small .primary-cta {
+      padding: 1rem 1.5rem;
+      font-size: 1rem; }
+    .double-cta.small .secondary-cta {
+      padding: 0.71429rem 1.28571rem; }
+      .double-cta.small .secondary-cta:hover {
+        padding: 0.71429rem 1.71429rem; }
+  .double-cta.large {
+    font-size: 1.28571rem; }
+    .double-cta.large .primary-cta {
+      padding: 1.57143rem 1.92857rem;
+      font-size: 1.28571rem; }
+    .double-cta.large .secondary-cta {
+      padding: 0.85714rem 1.71429rem;
+      font-size: 1.14286rem; }
+      .double-cta.large .secondary-cta:hover {
+        padding: 0.85714rem 2.28571rem; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/common-elements/_doubleCta.scss

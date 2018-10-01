@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.instagram-feed {
+  padding-top: 5.71429rem;
+  padding-bottom: 7.14286rem; }
+  .instagram-feed .feed-container {
+    display: grid;
+    grid-auto-flow: row dense;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2.85714rem;
+    margin: 0;
+    padding: 0; }
+    @media (min-width: 1600px) {
+      .instagram-feed .feed-container {
+        grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 799px) {
+      .instagram-feed .feed-container {
+        display: block; } }
+    .instagram-feed .feed-container li {
+      list-style-type: none;
+      position: relative;
+      overflow: hidden; }
+      @media (max-width: 799px) {
+        .instagram-feed .feed-container li {
+          margin: 1.42857rem;
+          display: block; } }
+      .instagram-feed .feed-container li img {
+        display: block;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        transition: all 0.2s ease-in-out; }
+      .instagram-feed .feed-container li a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        background-color: rgba(40, 165, 190, 0.7);
+        text-decoration: none;
+        text-align: center; }
+        .instagram-feed .feed-container li a span {
+          font-family: "Muli", sans-serif;
+          font-weight: 700;
+          font-size: 1.14286rem;
+          color: #fff;
+          text-decoration: none;
+          line-height: 160%; }
+        .instagram-feed .feed-container li a:hover {
+          opacity: 1; }
+      .instagram-feed .feed-container li:hover img {
+        filter: blur(7px); }
+      .instagram-feed .feed-container li:first-child {
+        grid-row-start: 1;
+        grid-row-end: span 2;
+        grid-column-start: 1;
+        grid-column-end: span 2; }
+      @media (max-width: 799px) {
+        .instagram-feed .feed-container li:nth-child(4), .instagram-feed .feed-container li:nth-child(5) {
+          display: none; } }
+      @media (min-width: 1600px) {
+        .instagram-feed .feed-container li:nth-child(6), .instagram-feed .feed-container li:nth-child(7) {
+          display: none; } }
+      @media (max-width: 799px) {
+        .instagram-feed .feed-container li:nth-child(6), .instagram-feed .feed-container li:nth-child(7) {
+          display: none; } }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_instagramFeed.scss

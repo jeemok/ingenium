@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.material-options {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0; }
+  .material-options .materials {
+    display: flex;
+    padding: 0;
+    margin: 0; }
+    @media (max-width: 799px) {
+      .material-options .materials {
+        padding: 0 0 2.14286rem; } }
+    .material-options .materials .materials-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style-type: none;
+      margin-right: 2.85714rem;
+      padding-right: 2.85714rem;
+      border-right: 1px solid #ddd; }
+      .material-options .materials .materials-group:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none; }
+      @media (max-width: 799px) {
+        .material-options .materials .materials-group {
+          margin-right: 1.42857rem;
+          padding-right: 1.42857rem; } }
+  .material-options .orientations {
+    margin-left: 2.85714rem; }
+    @media (max-width: 799px) {
+      .material-options .orientations {
+        padding: 0 0 2.14286rem;
+        margin: 0; } }
+  .material-options .orientation-selector .orientations-list {
+    display: flex; }
+  .material-options .instruction-title {
+    flex: 0 0 100%;
+    width: 100%;
+    padding-bottom: 1.07143rem;
+    margin-bottom: 1.42857rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1rem;
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    list-style-type: none; }
+  .material-options .options-group-name {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.07143rem; }
+    .material-options .options-group-name.lighter {
+      opacity: 0.5; }
+  .material-options .option-button {
+    border: none;
+    background: none;
+    outline: none;
+    margin-right: 2.85714rem;
+    width: 4.57143rem;
+    opacity: 1;
+    transition: all 0.3s ease-in-out; }
+    .material-options .option-button:last-of-type {
+      margin: 0; }
+    @media (max-width: 799px) {
+      .material-options .option-button {
+        margin-right: 1.42857rem; } }
+    .material-options .option-button img {
+      display: block;
+      margin: 0 auto 0.71429rem;
+      width: 2.85714rem;
+      height: 2.85714rem;
+      padding: 0.28571rem;
+      background-color: #fff;
+      border: 1px solid #43525A;
+      box-shadow: none;
+      transition: all 0.3s ease-in-out; }
+    .material-options .option-button span {
+      display: block;
+      text-align: center;
+      font-size: 0.85714rem;
+      color: #647a86; }
+    .material-options .option-button:hover {
+      opacity: 0.75;
+      cursor: pointer; }
+    .material-options .option-button.selected img {
+      padding: 0.21429rem;
+      border: 2px solid #28A5BE;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_materialOptionsSelector.scss

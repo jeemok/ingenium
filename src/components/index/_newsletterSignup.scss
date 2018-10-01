@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.newsletter-signup {
+  color: #43525A;
+  padding-top: 5.71429rem; }
+  .newsletter-signup .intro-text {
+    margin-bottom: 2.85714rem;
+    width: 100%;
+    max-width: 64.28571rem; }
+    .newsletter-signup .intro-text h2 {
+      font-family: "Muli", sans-serif;
+      font-weight: 600;
+      font-size: 2.28571rem;
+      line-height: 2.85714rem;
+      margin: 0 0 1.78571rem; }
+    .newsletter-signup .intro-text p {
+      font-family: "Muli", sans-serif;
+      font-weight: 400;
+      margin: 0.71429rem 0;
+      font-size: 1rem;
+      line-height: 160%; }
+      @media (max-width: 799px) {
+        .newsletter-signup .intro-text p {
+          display: none; } }
+      .newsletter-signup .intro-text p a {
+        font-family: "Muli", sans-serif;
+        font-weight: 700;
+        color: #28A5BE; }
+    .newsletter-signup .intro-text h4 {
+      font-family: "Muli", sans-serif;
+      font-weight: 400;
+      margin: 1.07143rem 0;
+      font-size: 1.28571rem;
+      line-height: 1.92857rem;
+      color: #28A5BE; }
+      @media (max-width: 799px) {
+        .newsletter-signup .intro-text h4 {
+          display: none; } }
+  .newsletter-signup .signup-form .form-feedback {
+    font-size: 1.14286rem;
+    font-family: "Muli", sans-serif;
+    font-weight: 400;
+    max-width: 37.14286rem; }
+    .newsletter-signup .signup-form .form-feedback.feedback-sending {
+      color: #647a86; }
+    .newsletter-signup .signup-form .form-feedback.feedback-error {
+      color: #c0392b; }
+      .newsletter-signup .signup-form .form-feedback.feedback-error a {
+        color: #c0392b;
+        font-family: "Muli", sans-serif;
+        font-weight: 600; }
+    .newsletter-signup .signup-form .form-feedback.feedback-success {
+      color: #28A5BE; }
+      .newsletter-signup .signup-form .form-feedback.feedback-success a {
+        color: #28A5BE;
+        font-family: "Muli", sans-serif;
+        font-weight: 600; }
+  .newsletter-signup .signup-form .input-container {
+    display: flex;
+    width: 100%;
+    max-width: 34.28571rem; }
+    @media (max-width: 799px) {
+      .newsletter-signup .signup-form .input-container {
+        display: block; } }
+    .newsletter-signup .signup-form .input-container .input-field {
+      flex: 1 1 100%;
+      font-size: 1.14286rem;
+      font-family: "Muli", sans-serif;
+      font-weight: 400;
+      border: 1px solid #ddd;
+      padding: 0.71429rem; }
+      .newsletter-signup .signup-form .input-container .input-field:focus {
+        outline: none; }
+    .newsletter-signup .signup-form .input-container .submit-button {
+      flex-grow: 0;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      padding: 0.35714rem 1.42857rem;
+      background-color: #28A5BE;
+      color: #fff;
+      border: none;
+      outline: none;
+      font-size: 1.14286rem;
+      transition: 0.3s all ease-in-out; }
+      .newsletter-signup .signup-form .input-container .submit-button:hover {
+        background-color: #1f8094;
+        cursor: pointer; }
+      @media (max-width: 799px) {
+        .newsletter-signup .signup-form .input-container .submit-button {
+          margin-top: 1.42857rem; } }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_newsletterSignup.scss

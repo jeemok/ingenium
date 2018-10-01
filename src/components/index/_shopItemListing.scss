@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.shop-item-listing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center; }
+  .shop-item-listing .image-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    margin-bottom: 2.14286rem; }
+    .shop-item-listing .image-container img {
+      display: block;
+      position: relative;
+      z-index: 2;
+      max-width: 100%;
+      height: auto;
+      margin: 1.42857rem auto;
+      transition: 1.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+      transform: translateY(0); }
+    .shop-item-listing .image-container .image-shadow {
+      position: absolute;
+      z-index: 1;
+      width: 60%;
+      margin-left: -30%;
+      left: 50%;
+      bottom: 0.71429rem;
+      height: 0.35714rem;
+      background-color: #43525A;
+      border-radius: 100%;
+      filter: blur(10px);
+      transform: scale(1);
+      transition: 1.8s all cubic-bezier(0.165, 0.84, 0.44, 1);
+      display: block; }
+  .shop-item-listing .info-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding-bottom: 1.07143rem; }
+    .shop-item-listing .info-container .item-name {
+      font-family: "Muli", sans-serif;
+      font-weight: 700;
+      font-size: 1.85714rem;
+      display: block;
+      margin: 0; }
+    .shop-item-listing .info-container .availability {
+      font-size: 0.85714rem;
+      display: block;
+      margin: 0.71429rem 0 0; }
+      .shop-item-listing .info-container .availability .availability-item {
+        font-family: "Muli", sans-serif;
+        font-weight: 700;
+        display: inline-block;
+        margin-left: 0.35714rem; }
+  .shop-item-listing .description {
+    font-size: 1rem;
+    display: block;
+    margin: 0.71429rem 0 0; }
+  .shop-item-listing .price-container {
+    flex-grow: 0;
+    flex-shrink: 0; }
+    .shop-item-listing .price-container .price-subtitle {
+      font-size: 0.85714rem;
+      display: block;
+      margin: 0 0 0.35714rem; }
+    .shop-item-listing .price-container .price-amount {
+      font-family: "Muli", sans-serif;
+      font-weight: 700;
+      font-size: 1.28571rem; }
+  .shop-item-listing .cta-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 1.42857rem;
+    font-size: 1.14286rem;
+    display: flex;
+    justify-content: center; }
+  .shop-item-listing:hover .image-container img {
+    transform: translateY(-1.42857rem); }
+  .shop-item-listing:hover .image-container .image-shadow {
+    transform: scale(0.8); }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_shopItemListing.scss

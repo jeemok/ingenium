@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.index-super-practical {
+  padding-top: 5.71429rem;
+  padding-bottom: 5.71429rem; }
+  .index-super-practical .intro-text {
+    text-align: center;
+    margin: 0 auto 3.21429rem;
+    max-width: 64.28571rem; }
+    .index-super-practical .intro-text h2 {
+      font-family: "Muli", sans-serif;
+      font-weight: 600;
+      font-size: 2.28571rem;
+      line-height: 120%;
+      margin: 0 auto 1.42857rem; }
+    .index-super-practical .intro-text p {
+      font-size: 1rem;
+      line-height: 160%;
+      margin: 0; }
+      @media (max-width: 799px) {
+        .index-super-practical .intro-text p {
+          display: none; } }
+  .index-super-practical .practicality-items-container {
+    display: flex; }
+    @media (max-width: 799px) {
+      .index-super-practical .practicality-items-container {
+        display: block; } }
+  .index-super-practical .item {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    margin: 1.07143rem 2.14286rem;
+    text-align: center; }
+    @media (max-width: 799px) {
+      .index-super-practical .item {
+        margin: 4.28571rem 2.14286rem 0;
+        display: block; } }
+    .index-super-practical .item .item-image {
+      width: 100%;
+      height: 11.42857rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 2.14286rem; }
+      .index-super-practical .item .item-image img {
+        display: block; }
+    .index-super-practical .item h3 {
+      font-family: "Muli", sans-serif;
+      font-weight: 700;
+      font-size: 1.42857rem;
+      line-height: 130%;
+      margin: 0 0 1.42857rem; }
+    .index-super-practical .item p {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 160%; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_indexSuperPractical.scss

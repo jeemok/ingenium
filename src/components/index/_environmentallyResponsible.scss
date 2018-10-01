@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.environmentally-responsible {
+  background-color: #BEEADF;
+  color: #43525A;
+  padding-top: 5.71429rem; }
+  @media (max-width: 799px) {
+    .environmentally-responsible {
+      padding: 5rem 0 0; } }
+  .environmentally-responsible .environmentally-responsible-content .content-wrapper {
+    max-width: 71.42857rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    @media (max-width: 799px) {
+      .environmentally-responsible .environmentally-responsible-content .content-wrapper {
+        text-align: left; } }
+    .environmentally-responsible .environmentally-responsible-content .content-wrapper h2 {
+      font-family: "Muli", sans-serif;
+      font-weight: 600;
+      font-size: 2.28571rem;
+      line-height: 2.85714rem;
+      margin: 0 0 1.78571rem; }
+    .environmentally-responsible .environmentally-responsible-content .content-wrapper p {
+      font-family: "Muli", sans-serif;
+      font-weight: 400;
+      margin: 0.71429rem 0;
+      font-size: 1rem;
+      line-height: 160%; }
+  .environmentally-responsible .environmentally-responsible-content .environmentally-responsible-graphic {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.42857rem auto 0; }
+    @media (max-width: 799px) {
+      .environmentally-responsible .environmentally-responsible-content .environmentally-responsible-graphic {
+        width: 140%;
+        margin: 1.42857rem -20% 0; } }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_environmentallyResponsible.scss

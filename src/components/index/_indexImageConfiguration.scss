@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.index-image-configuration {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 8.57143rem; }
+  @media (max-width: 799px) {
+    .index-image-configuration {
+      background-size: cover;
+      background-position: left; } }
+
+.configuration-info {
+  width: 100%;
+  max-width: 60rem;
+  display: flex;
+  background-color: #fff;
+  padding: 2.14286rem 0;
+  z-index: 2;
+  position: relative;
+  top: 8.57143rem;
+  align-items: center; }
+  .configuration-info .info-left {
+    flex-grow: 1;
+    flex-shrink: 1; }
+  .configuration-info .info-right {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 2.14286rem; }
+  .configuration-info h3 {
+    font-size: 1rem;
+    display: block;
+    margin: 0 0 0.57143rem;
+    color: #7e939f; }
+  .configuration-info h2 {
+    font-size: 1.42857rem;
+    display: block;
+    margin: 0 0 0.35714rem; }
+  .configuration-info p {
+    font-size: 1rem;
+    display: block;
+    margin: 0 0 0.35714rem;
+    max-width: 34.28571rem; }
+  .configuration-info .price {
+    display: block;
+    font-family: "Muli", sans-serif;
+    font-weight: 700;
+    font-size: 1.28571rem;
+    margin: 0.71429rem 0 0; }
+  .configuration-info .chevron-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 6.57143rem; }
+    .configuration-info .chevron-container .chevron-button {
+      display: block;
+      margin: 0 auto;
+      border: none;
+      background: none;
+      padding: 1.07143rem;
+      outline: none;
+      opacity: 0.75;
+      transition: all 0.3s ease-in-out; }
+      .configuration-info .chevron-container .chevron-button img {
+        height: 1.71429rem;
+        transition: all 0.3s ease-in-out; }
+      .configuration-info .chevron-container .chevron-button:hover {
+        opacity: 1;
+        cursor: pointer; }
+        .configuration-info .chevron-container .chevron-button:hover img {
+          height: 2.14286rem; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_indexImageConfiguration.scss

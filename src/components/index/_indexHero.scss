@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.index-hero {
+  position: relative;
+  z-index: 1;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  padding-bottom: 5.71429rem;
+  background-position: center bottom;
+  background-repeat: no-repeat; }
+  @media (max-width: 799px) {
+    .index-hero {
+      background-size: auto 50rem;
+      background-position: -71.42857rem top;
+      padding-bottom: 7.14286rem; } }
+  @media (min-width: 1400px) {
+    .index-hero {
+      background-size: auto 110%; } }
+  @media (min-width: 1600px) {
+    .index-hero {
+      background-position: center -8.57143rem;
+      background-size: initial; } }
+  @media (min-width: 2200px) {
+    .index-hero {
+      background-position: center -1.42857rem;
+      background-size: initial; } }
+  .index-hero__container {
+    display: flex; }
+    @media (max-width: 799px) {
+      .index-hero__container {
+        display: block; } }
+  .index-hero__content {
+    flex-grow: 0;
+    flex-shrink: 0;
+    max-width: 25rem;
+    width: 100%;
+    margin: 15vh 5.71429rem 15vh 0; }
+    @media (max-width: 799px) {
+      .index-hero__content {
+        display: block; } }
+  .index-hero h1 {
+    font-family: "Muli", sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 0 1.42857rem;
+    line-height: 3.85714rem;
+    letter-spacing: 0.3; }
+  .index-hero p {
+    font-family: "Muli", sans-serif;
+    font-weight: 300;
+    font-size: 1.28571rem;
+    line-height: 160%;
+    margin: 0 0 2.14286rem; }
+    @media (max-width: 799px) {
+      .index-hero p {
+        font-size: 1.14286rem; } }
+  .index-hero .cta-container {
+    margin-top: 1.78571rem; }
+  .index-hero__image-container {
+    overflow: visible;
+    position: relative;
+    transform: translateY(3.57143rem);
+    opacity: 0;
+    transition: 1s opacity cubic-bezier(0.165, 0.84, 0.44, 1), 13s transform cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .index-hero__image-container.image-loaded {
+      opacity: 1;
+      transform: translateY(0); }
+  .index-hero__image {
+    position: absolute;
+    left: 0; }
+    @media (min-width: 1400px) {
+      .index-hero__image {
+        width: 74.28571rem;
+        bottom: -7.14286rem; } }
+    @media (min-width: 1600px) {
+      .index-hero__image {
+        width: auto;
+        bottom: -14.28571rem; } }
+    @media (max-width: 799px) {
+      .index-hero__image {
+        width: 85.71429rem;
+        height: auto;
+        top: -22.85714rem;
+        left: -7.14286rem; } }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_indexHero.scss

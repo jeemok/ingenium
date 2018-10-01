@@ -1,0 +1,125 @@
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+.footer {
+  padding-bottom: 3.57143rem; }
+  .footer .footer-container {
+    border-top: 1px solid #ccc;
+    padding-top: 3.57143rem;
+    margin-top: 3.57143rem;
+    display: flex; }
+    @media (max-width: 799px) {
+      .footer .footer-container {
+        display: block; } }
+  .footer .footer-logo-container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 1.42857rem 3.57143rem 1.42857rem;
+    padding: 0.71429rem 3.57143rem 0.71429rem;
+    border-right: 1px solid #ddd; }
+    @media (max-width: 799px) {
+      .footer .footer-logo-container {
+        padding: 0;
+        margin: 0;
+        border: none; } }
+    .footer .footer-logo-container img {
+      width: 7.14286rem;
+      margin: 0 auto 2.85714rem;
+      display: block; }
+  .footer .footer-menu__container {
+    margin: 1.42857rem 0;
+    padding: 0.71429rem 0;
+    display: flex; }
+    @media (max-width: 799px) {
+      .footer .footer-menu__container {
+        display: block; } }
+  .footer .footer-menu__group {
+    list-style-type: none;
+    margin-right: 3.57143rem; }
+    @media (max-width: 799px) {
+      .footer .footer-menu__group {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2.14286rem; } }
+    .footer .footer-menu__group .footer-link {
+      display: block;
+      margin-bottom: 0.78571rem;
+      color: #43525A;
+      font-size: 1rem;
+      text-decoration: none; }
+      .footer .footer-menu__group .footer-link:hover {
+        color: #28A5BE;
+        text-decoration: underline; }
+  .footer .footer-menu__item.group-title {
+    display: block;
+    margin-bottom: 1.42857rem;
+    font-size: 0.85714rem; }
+  .footer .copyright {
+    display: block;
+    text-align: center;
+    max-width: 55.71429rem;
+    width: 100%;
+    font-size: 0.85714rem;
+    color: #6f8794;
+    margin: 2.14286rem auto 0;
+    padding: 0 2.14286rem; }
+  .footer .footer-proud-member {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2.14286rem; }
+    .footer .footer-proud-member .text {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0.71429rem;
+      font-size: 0.85714rem;
+      color: #6f8794; }
+    .footer .footer-proud-member .logo {
+      margin: 0.71429rem;
+      height: 2.85714rem;
+      width: auto; }
+    .footer .footer-proud-member .separator {
+      display: block;
+      background: #ddd;
+      height: 0.85714rem;
+      width: 1px; }
+  .footer.configurator {
+    display: none; }
+  .footer.index .footer-container {
+    margin-top: 0; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/layout/_footer.scss

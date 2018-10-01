@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.index-configurator-promo {
+  color: #fff;
+  background-image: linear-gradient(-90deg, #1BA5C0 0%, #0C6B8C 100%); }
+  .index-configurator-promo .content-container {
+    display: flex;
+    align-items: stretch; }
+    @media (max-width: 799px) {
+      .index-configurator-promo .content-container {
+        padding: 0; } }
+    @media (max-width: 799px) {
+      .index-configurator-promo .content-container {
+        flex-direction: column; } }
+    .index-configurator-promo .content-container .text {
+      padding: 8.57143rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 0 0 100%;
+      max-width: 38.57143rem;
+      margin-right: 4.28571rem; }
+      @media (max-width: 799px) {
+        .index-configurator-promo .content-container .text {
+          order: 2;
+          padding: 5rem 0;
+          margin-right: 0; } }
+      .index-configurator-promo .content-container .text h2 {
+        font-family: "Muli", sans-serif;
+        font-weight: 600;
+        font-size: 2.28571rem;
+        line-height: 120%;
+        margin: 0 auto 2.14286rem; }
+      .index-configurator-promo .content-container .text p {
+        font-size: 1.14286rem;
+        line-height: 160%;
+        margin: 0; }
+      .index-configurator-promo .content-container .text .cta-container {
+        width: 100%;
+        margin-top: 2.14286rem; }
+    .index-configurator-promo .content-container .image {
+      display: flex;
+      width: 100%;
+      background-position: center right; }
+      @media (max-width: 799px) {
+        .index-configurator-promo .content-container .image {
+          order: 1;
+          height: 28.57143rem;
+          margin: 0 -10%;
+          width: 120%;
+          background-position: center;
+          background-size: cover; } }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_indexConfiguratorPromo.scss

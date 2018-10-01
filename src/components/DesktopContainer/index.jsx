@@ -50,7 +50,7 @@ class MobileContainer extends PureComponent {
             visible={sidebarOpened}
           >
             <Menu.Item as="a" active>
-              Home
+              Nisecode
             </Menu.Item>
             <Menu.Item as="a">Work</Menu.Item>
             <Menu.Item as="a">Company</Menu.Item>

@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+:global .react-autosuggest__container {
+  position: relative;
+  padding: 0.71429rem 0;
+  width: 25rem;
+  max-width: 100%;
+  color: #43525A; }
+  :global .react-autosuggest__container:after {
+    content: "\25BE";
+    display: block;
+    font-size: 1.14286rem;
+    position: absolute;
+    right: 0.28571rem;
+    top: 1.28571rem; }
+
+:global .react-autosuggest__input {
+  background: none;
+  padding: 0.71429rem 0.28571rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.14286rem;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer; }
+  :global .react-autosuggest__input--focused, :global .react-autosuggest__input:hover {
+    outline: none;
+    border-color: #28A5BE;
+    border-width: 2px;
+    padding-bottom: 0.64286rem; }
+
+:global .react-autosuggest__suggestions-list {
+  padding: 0;
+  margin: 0;
+  background: none; }
+
+:global .react-autosuggest__suggestion {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0.28571rem;
+  list-style-type: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; }
+  :global .react-autosuggest__suggestion--highlighted, :global .react-autosuggest__suggestion:hover {
+    color: #28A5BE; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/index/_countrySelector.scss

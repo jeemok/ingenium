@@ -1,0 +1,210 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,600,700,900&subset=latin-ext");
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.layout-root {
+  background-color: #F6F6F6;
+  font-family: 'Muli', cursive;
+  font-size: 1rem;
+  color: #43525A;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+:global html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased; }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container {
+      padding: 0 2.14286rem; } }
+
+.container-wide {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0 1.42857rem;
+  margin: 0 auto; }
+  @media (max-width: 799px) {
+    .container-wide {
+      padding: 0 2.14286rem; } }
+
+/*
+ * Picks a colour from two options based on which one is more visible
+ * on the given background colour.
+ *
+ * Usage: pick-visible-color($bg-color, $color-1, $color-2)
+ */
+.tile {
+  position: relative;
+  width: 8.57143rem;
+  height: 8.57143rem;
+  box-sizing: border-box;
+  box-shadow: none;
+  opacity: 0; }
+  .tile.tile-visible {
+    opacity: 1; }
+  .tile .surface-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-size: cover;
+    transition: 0.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    box-shadow: none;
+    transform: rotate(0);
+    filter: blur(0); }
+    .tile .surface-image.rotate-90 {
+      transform: rotate(90deg); }
+    .tile .surface-image.rotate-180 {
+      transform: rotate(180deg); }
+    .tile .surface-image.rotate-270 {
+      transform: rotate(270deg); }
+  .tile .action-buttons-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transition-delay: 0.2s; }
+    .tile .action-buttons-container .action-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      width: 2.85714rem;
+      height: 2.85714rem;
+      margin-top: -1.42857rem;
+      margin-left: -1.42857rem;
+      border-radius: 100%;
+      background-color: #fff;
+      box-shadow: 0;
+      transition: 0.4s all cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition-delay: 0;
+      outline: none; }
+      .tile .action-buttons-container .action-button img {
+        width: 1.14286rem;
+        height: auto; }
+      .tile .action-buttons-container .action-button.action-button-main {
+        z-index: 3;
+        width: 4.28571rem;
+        height: 4.28571rem;
+        margin-top: -2.14286rem;
+        margin-left: -2.14286rem; }
+        .tile .action-buttons-container .action-button.action-button-main img {
+          width: 1.71429rem; }
+      .tile .action-buttons-container .action-button:hover {
+        box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
+        cursor: pointer; }
+  .tile:hover {
+    z-index: 5; }
+    .tile:hover .surface-image {
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5); }
+    .tile:hover .action-buttons-container {
+      opacity: 1;
+      transition-delay: 0s;
+      z-index: 6; }
+      .tile:hover .action-buttons-container .action-button {
+        transition-delay: 0.4s; }
+        .tile:hover .action-buttons-container .action-button.action-button-left {
+          left: 0; }
+        .tile:hover .action-buttons-container .action-button.action-button-right {
+          left: 100%; }
+  .tile.another-updating, .tile.another-updating:hover {
+    opacity: 0.7; }
+    .tile.another-updating .action-buttons-container , .tile.another-updating:hover .action-buttons-container  {
+      opacity: 0; }
+  .tile.this-updating, .tile.this-updating:hover {
+    z-index: 2; }
+    .tile.this-updating .surface-image, .tile.this-updating:hover .surface-image {
+      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5); }
+    .tile.this-updating .action-buttons-container , .tile.this-updating:hover .action-buttons-container  {
+      opacity: 0; }
+  .tile.leg-placement-view {
+    overflow: hidden; }
+    .tile.leg-placement-view .surface-image {
+      filter: blur(3px); }
+    .tile.leg-placement-view .action-buttons-container {
+      display: none; }
+  .tile .legs-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 0.2); }
+    .tile .legs-container .leg-button {
+      position: absolute;
+      width: 2.28571rem;
+      height: 2.28571rem;
+      border: none;
+      border-radius: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      outline: none; }
+      .tile .legs-container .leg-button .leg-button-icon {
+        opacity: 0;
+        transition: 0.4s all cubic-bezier(0.165, 0.84, 0.44, 1); }
+      .tile .legs-container .leg-button.leg-placed {
+        background-color: #fff; }
+        .tile .legs-container .leg-button.leg-placed .leg-button-icon {
+          opacity: 1; }
+      .tile .legs-container .leg-button.leg-top-left {
+        top: 0.42857rem;
+        left: 0.42857rem; }
+      .tile .legs-container .leg-button.leg-top-right {
+        top: 0.42857rem;
+        right: 0.42857rem; }
+      .tile .legs-container .leg-button.leg-bottom-right {
+        bottom: 0.42857rem;
+        right: 0.42857rem; }
+      .tile .legs-container .leg-button.leg-bottom-left {
+        bottom: 0.42857rem;
+        left: 0.42857rem; }
+      .tile .legs-container .leg-button.leg-middle {
+        top: 50%;
+        left: 50%;
+        margin-top: -1.14286rem;
+        margin-left: -1.14286rem; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/components/configurator/_singleTile.scss
